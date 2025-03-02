@@ -9,10 +9,9 @@ def calculate_sum(file_path):
     total_sum = 0
     with open(file_path, 'r') as file:
         for line in file:
-            total_sum += extract_digits(line.strip())  # Process each line
+            total_sum += extract_digits(line.strip())
     return total_sum
 
-# Run the solution
-file_path = "input.txt"  # Your input file
+file_path = "input.txt"
 result = calculate_sum(file_path)
 print(result)
